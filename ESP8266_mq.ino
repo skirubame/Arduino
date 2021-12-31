@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <MQTT.h>
-const char ssid[] = "c";
-const char pass[] = "66666666";
+const char ssid[] = "";
+const char pass[] = "";
 int value,ldr;            
 // Initialize DHT sensor.
 //DHT dht(dht_apin, DHTTYPE);                
