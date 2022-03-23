@@ -1,6 +1,5 @@
 int redLed = 12;
 int greenLed = 11;
-int buzzer = 10;
 int smokeA0 = A5;
 // Your threshold value
 int sensorThres = 400;
@@ -8,7 +7,6 @@ int sensorThres = 400;
 void setup() {
   pinMode(redLed, OUTPUT);
   pinMode(greenLed, OUTPUT);
-  pinMode(buzzer, OUTPUT);
   pinMode(smokeA0, INPUT);
   Serial.begin(9600);
 }
@@ -23,13 +21,13 @@ void loop() {
   {
     digitalWrite(redLed, HIGH);
     digitalWrite(greenLed, LOW);
-    tone(buzzer, 1000, 200);
+  
   }
   else
   {
     digitalWrite(redLed, LOW);
     digitalWrite(greenLed, HIGH);
-    noTone(buzzer);
+   
   }
   delay(100);
 }
